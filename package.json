@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@fancyapps/ui": "^4.0.5",
     "browser-sync": "^2.27.5",
     "save-dev": "0.0.1-security"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
