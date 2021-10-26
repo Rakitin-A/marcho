@@ -1001,6 +1001,15 @@
 
 .shop-content {
     width: 100%;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #ececec;
+        .product-item{
+            margin-bottom: 40px;
+        }
+    }
     &__filter {
         border: 1px solid #ececec;
         padding: 20px 25px 25px 30px;
@@ -1030,7 +1039,7 @@
 }
 
 .jq-selectbox__select {
-    // @extend %quicksand-500;
+    @extend %quicksand-500;
     margin-left: 30px;
     height: 32px;
     padding: 0 30px 0 0;
