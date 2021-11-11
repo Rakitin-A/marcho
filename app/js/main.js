@@ -1,5 +1,20 @@
 $(function () {
 
+    // *табы product *
+    $('.product-tabs__top-item').on('click', function(e) {
+        e.preventDefault(); //отменяет стандартную обработку по ссылке
+        $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+        $(this).addClass('product-tabs__top-item--active');
+
+        $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+        $($(this).attr('href')).addClass('product-tabs__content-item--active');
+    });
+
+
+
+
+
+
     // * слайдер product *
     $('.product-slide__thumb').slick({
         asNavFor: '.product-slide__big',
@@ -22,17 +37,17 @@ $(function () {
 
 
     $('.shop-content__filter-btn').on('click', function () {
-        $('.shop-content__filter-btn').removeClass('.shop-content__filter-btn--active');
-        $(this).addClass('.shop-content__filter-btn--active');
+        $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+        $(this).addClass('shop-content__filter-btn--active');
     });
 
 
     $('.button-list').on('click', function () {
-        $('.product-item').addClass('.product-item--list');
+        $('.product-item').addClass('product-item--list');
     });
 
     $('.button-grid').on('click', function () {
-        $('.product-item').removeClass('.product-item--list');
+        $('.product-item').removeClass('product-item--list');
     });
 
 
