@@ -728,8 +728,7 @@
     &__item-box {
         padding: 30px 40px;
     }
-   
-    
+
     &__item-title {
         color: $title;
         @extend %roboto-400;
@@ -755,7 +754,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    &__author ,
+    &__author,
     &__date {
         padding-left: 30px;
         position: relative;
@@ -1561,14 +1560,14 @@
 
 .blog-page {
     padding: 120px 0 60px;
-    &__item--slider{
+    &__item--slider {
         .blog-page__item-box {
             margin-top: -8px;
         }
     }
-    &__slider{
+    &__slider {
         .slick-next,
-        .slick-prev{
+        .slick-prev {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -1584,26 +1583,24 @@
             box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
             cursor: pointer;
             outline: none;
-            path{
+            path {
                 fill: #fff;
             }
         }
 
-        .slick-disabled{
+        .slick-disabled {
             background-color: #fff;
             box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
-            path{
-               fill: $accent; 
+            path {
+                fill: $accent;
             }
         }
-        .slick-next{
+        .slick-next {
             right: 40px;
         }
-        .slick-prev{
+        .slick-prev {
             left: 40px;
         }
-       
-        
     }
     &__inner {
         display: flex;
@@ -1616,56 +1613,55 @@
     &__aside {
         width: 370px;
     }
-    &__item{
+    &__item {
         margin-bottom: 60px;
-        &.blog-page__item--no-image{
+        &.blog-page__item--no-image {
             border-top: 1px solid #ececec;
             box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
         }
-    } 
-    &__item-link{
+    }
+    &__item-link {
         display: block;
         color: inherit;
         @extend %roboto-700;
         font-size: inherit;
     }
-    &__img{
+    &__img {
         max-width: 770px;
         height: 450px;
         object-fit: cover;
         display: block;
     }
-    &__item-box{
+    &__item-box {
         border: 1px solid #ececec;
-        border-top:none;
-        padding: 40px; 
+        border-top: none;
+        padding: 40px;
     }
-    &__item-title{
+    &__item-title {
         color: $title;
         font-size: 22px;
         @extend %roboto-700;
         line-height: 32px;
         margin-bottom: 20px;
-        transition: all .3s;
-        &:hover{
+        transition: all 0.3s;
+        &:hover {
             color: $accent;
         }
     }
-    .blog-box{
+    .blog-box {
         justify-content: start;
-        &__author{
+        &__author {
             margin-right: 30px;
         }
     }
-   
 }
 
-.person{
+.person {
     border: 1px solid #ececec;
     margin-bottom: 40px;
     text-align: center;
     padding: 40px 25px;
-    &__img{
+    &__img {
         display: inline-block;
         width: 160px;
         height: 160px;
@@ -1673,94 +1669,93 @@
         margin: 0 auto;
         margin-bottom: 35px;
     }
-    &__name{
+    &__name {
         color: $title;
         font-size: 18px;
         @extend %roboto-700;
     }
-    &__position{
+    &__position {
         color: $accent;
         margin-bottom: 25px;
     }
-    &__text{
+    &__text {
         margin-bottom: 25px;
     }
-    &__social-link{
+    &__social-link {
         margin: 0 8px;
-        path{
+        path {
             fill: $default;
-            transition: all .3s;
+            transition: all 0.3s;
         }
-        &:hover{
-            path{
+        &:hover {
+            path {
                 fill: $accent;
             }
         }
     }
-
 }
 
-.latest-post{
+.latest-post {
     padding: 35px 30px 40px;
     border: 1px solid #ececec;
-    &__title{
+    &__title {
         color: $title;
         text-transform: uppercase;
         @extend %roboto-400;
         font-size: 22px;
         margin-bottom: 40px;
     }
-    &__item{
+    &__item {
         margin-bottom: 20px;
         display: flex;
-        & + .latest-post__item{
-            border-top:  1px solid #ececec;
+        & + .latest-post__item {
+            border-top: 1px solid #ececec;
             padding-top: 20px;
         }
     }
-    &__img-link{
+    &__img-link {
         display: block;
         margin-right: 20px;
         min-width: 80px;
     }
-    &__img{
+    &__img {
         width: 80px;
         height: 80px;
         object-fit: cover;
     }
-    &__title-link{
+    &__title-link {
         @extend %roboto-400;
         font-size: 18px;
         color: $title;
         line-height: 28px;
     }
-    &__date{
-       padding-left: 26px;
-       position: relative; 
-       &::before{
-           content: "";
-           position: absolute;
-           left: 0;
-           top: 3px;
-           background-image: url('../images/icons/date.svg');
-           width: 16px;
-           height: 16px;
-       }
+    &__date {
+        padding-left: 26px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 3px;
+            background-image: url("../images/icons/date.svg");
+            width: 16px;
+            height: 16px;
+        }
     }
 }
 
-.blog-one{
-    &__text{
-        h4{
+.blog-one {
+    &__text {
+        h4 {
             @extend %roboto-700;
             color: $title;
             font-size: 22px;
             margin: 25px 0;
         }
-        p{
+        p {
             margin: 25px 0;
         }
-        blockquote{
+        blockquote {
             background-color: $bg;
             border-left: 3px solid $accent;
             @extend %roboto-400;
@@ -1774,130 +1769,210 @@
         padding: 30px;
         margin-top: -1px;
     }
-    &__left-img{
+    &__left-img {
         float: left;
         margin-right: 30px;
         margin-bottom: 10px;
     }
-    &__right-img{
+    &__right-img {
         float: right;
         margin-left: 30px;
         margin-bottom: 10px;
     }
-    &__info{
-        display: flex; 
+    &__info {
+        display: flex;
         margin-bottom: 25px;
     }
-    &__info-link{
+    &__info-link {
         margin-right: 30px;
         padding-left: 28px;
         position: relative;
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             left: 0;
             top: 0;
-            background-image: url('../images/icons/date.svg');
+            background-image: url("../images/icons/date.svg");
             width: 16px;
             height: 16px;
         }
     }
-    &__info-link--comment::before{
-        background-image: url('../images/icons/commets.svg');
-        top: 3px;   
+    &__info-link--comment::before {
+        background-image: url("../images/icons/commets.svg");
+        top: 3px;
     }
-    &__info-link--author::before{
-        background-image: url('../images/icons/user.svg');
+    &__info-link--author::before {
+        background-image: url("../images/icons/user.svg");
     }
-    &__form-title{
+    &__form-title {
         text-transform: uppercase;
         margin: 35px 0 25px;
         color: $title;
         font-size: 24px;
         @extend %roboto-700;
     }
-    .comments-form{
+    .comments-form {
         border-bottom: none;
     }
-    &__box{
+    &__box {
         margin: 25px 0 35px;
         display: flex;
         justify-content: space-between;
     }
     &__tags,
-    &__share{
-        span{
+    &__share {
+        span {
             text-transform: uppercase;
             color: $title;
             @extend %roboto-700;
         }
     }
-    &__share{
-        a{
+    &__share {
+        a {
             margin-right: 12px;
             vertical-align: middle;
-            &:hover{
-                path{
+            &:hover {
+                path {
                     fill: $accent;
                 }
             }
-            path{
-                fill:$default;
+            path {
+                fill: $default;
             }
         }
     }
-    &__author{
+    &__author {
         border-bottom: 1px solid #ececec;
         padding-bottom: 40px;
         margin-bottom: 40px;
         display: flex;
     }
-    &__author-img{
+    &__author-img {
         width: 140px;
         height: 140px;
         margin-right: 30px;
         object-fit: cover;
     }
-    &__author-name{
+    &__author-name {
         margin-bottom: 24px;
         font-size: 22px;
         @extend %roboto-700;
         color: $title;
     }
 }
-.comments__title{
+.comments__title {
     margin-bottom: 25px;
     color: $title;
     font-size: 24px;
     text-transform: uppercase;
     @extend %roboto-700;
 }
+.map {
+    padding: 120px 0;
+}
+#map {
+    width: 100%;
+    height: 450px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact {
+    padding-bottom: 120px;
+    &__inner {
+        display: flex;
+    }
+    &__info {
+        max-width: 370px;
+        margin-right: 30px;
+    }
+    &__info-title {
+        color: $title;
+        font-size: 48px;
+        line-height: 58px;
+        @extend %roboto-700;
+        margin-bottom: 20px;
+    }
+    &__info-text {
+        margin-bottom: 60px;
+    }
+    &__info-item {
+        color: $title;
+        margin-top: 55px;
+        padding-left: 80px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/icons/phone-contact.svg');
+            left: 20px;
+            top: 15px;
+        }
+    }
+    &__info-item--location::after{
+        width: 14px;
+        left: 23px;
+        background-image: url('../images/icons/location-contact.svg');
+    }
+    &__info-item--email::after{
+        width: 18px;
+        left: 21px;
+        background-image: url('../images/icons/mail-contact.svg');
+    }
+    &__info-phone {
+        display: block;
+        color: $title;
+    }
+    &__form{
+        width: 100%;
+        padding: 60px 40px;
+        box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
+    }
+    &__form-title{
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: $title;
+        @extend %roboto-700;
+    }
+    &__form-input{
+        width: 100%;
+        display: block;
+        height: 60px;
+        background-color: $bg;
+        border: none;
+        padding: 0 24px;
+        margin-bottom: 30px;
+    }
+    &__form-textarea{
+        width: 100%;
+        display: block;
+        resize: none;
+        height: 200px;
+        background-color: $bg;
+        border: none;
+        padding: 24px;
+        margin-bottom: 30px;
+    }
+    &__form-box{
+        display: flex;
+        justify-content: space-between;
+        input{
+            width: 330px;
+        }
+    }
+    &__form-btn{
+        @extend %btn;
+        border: none;
+    }
+}
 
 @import "media";
