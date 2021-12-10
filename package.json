@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@fancyapps/ui": "^4.0.5",
     "browser-sync": "^2.27.5",
     "save-dev": "0.0.1-security"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -14,8 +16,12 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
-    "sass": "^1.41.0"
+    "jquery-form-styler": "^2.0.2",
+    "rateyo": "^2.3.2",
+    "sass": "^1.41.0",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
